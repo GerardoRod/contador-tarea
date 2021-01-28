@@ -11,12 +11,11 @@ export class ContadorComponent implements OnInit {
    numero: number = 10;
    base: number = 10;
 
-   acumular( valor: number )  { this.numero += valor }; 
+   acumular( valor: number )  { this.numero += valor; };
 
   constructor() { }
 
   ngOnInit(): void {
-      
   }
 
 }
