@@ -37,14 +37,18 @@ export class MainpageComponent implements OnInit {
     poder : 0,
   };
 
-  agregar(): void{
+  agregar(): Personaje | any {
+
     if ( this.nuevo.nombre.trim().length === 0 ){ return; }
+    this.personajes.push(this.nuevo);
+    this.nuevo = {
+        nombre: '',
+        poder : 0,
+      };
+
 
   }
 
-  submit(){
-    console.log(this.nuevo);
-  }
 
   constructor() { }
 
