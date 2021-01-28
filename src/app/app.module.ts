@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from "@angular/material/slider";
+import { MatSliderModule } from '@angular/material/slider';
 import { Acumulador2Component } from './acumulador2/acumulador2.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
@@ -14,6 +14,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { HeroesModule } from './heroes/heroes.module';
 import { ContadorModule } from './contador/contador.module';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,10 @@ import { ContadorModule } from './contador/contador.module';
     MatButtonModule,
     LayoutModule,
     HeroesModule,
-    ContadorModule
+    ContadorModule,
+    MatToolbarModule,
+    MatIconModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

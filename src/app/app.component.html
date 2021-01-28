@@ -1,2 +1,23 @@
 
-<router-outlet></router-outlet>
+<mat-toolbar style="height: px;" color="primary" [class.mat-elevation-z2]>
+    <mat-toolbar-row>
+      <span>My App</span>
+      <span style="flex: 1 1 auto"></span>
+
+      <ul>
+          
+              <a mat-button [routerLink]="['/contador']"> contador </a>
+              <a mat-button [routerLink]="['/heroe']"> heroes </a>
+              <a mat-button [routerLink]="['/listado']"> listado </a>
+              <a mat-button [routerLink]="['/acumulador']"> acumulador </a>
+
+      </ul>
+      <span style="flex: 1 1 auto"></span>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div style="margin-top:
+ 10px"></div>
+    <router-outlet></router-outlet>
