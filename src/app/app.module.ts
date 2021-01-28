@@ -8,6 +8,7 @@ import { HeroesModule } from './heroes/heroes.module';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ContadorModule } from './contador/contador.module';
 import { MaterialModule } from './material/material.module';
+import { DbzModule } from './dbz/dbz.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { MaterialModule } from './material/material.module';
     ContadorModule,
     LayoutModule,
     MaterialModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]

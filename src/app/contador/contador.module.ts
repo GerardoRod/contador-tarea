@@ -4,7 +4,7 @@ import { ContadorComponent } from './contador/contador.component';
 @NgModule({
   declarations: [
     ContadorComponent,
-  ]
+  ],
 
 })
 export class ContadorModule { }

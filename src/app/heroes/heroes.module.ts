@@ -5,7 +5,7 @@ import { ListadoComponent } from './listado/listado.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
   ],
   declarations: [
     HeroeComponent,
