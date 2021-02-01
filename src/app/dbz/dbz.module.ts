@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainpageComponent } from './mainpage/mainpage.component';
 import { FormsModule } from '@angular/forms';
+
+import { MainpageComponent } from './mainpage/mainpage.component';
 import { PersonajesComponent } from './personajes/personajes.component';
 import { AgregarcomponentComponent } from './agregarcomponent/agregarcomponent.component';
 
+import { DbzService } from './services/dbz.service';
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { AgregarcomponentComponent } from './agregarcomponent/agregarcomponent.c
   imports: [
     CommonModule,
     FormsModule,
+  ],
+  providers: [ DbzService ],
 
-  ]
+  exports: [ MainpageComponent ]
 })
 export class DbzModule { }
